@@ -1,0 +1,119 @@
+Convertir números a letras con un tope de mil millones.
+
+>>> from numero_a_letra import numero_a_letra
+
+Prueba para convertir 1 a letra
+>>> numero_a_letra(1)
+'uno'
+
+Prueba para convertir 11 a letra
+>>> numero_a_letra(11)
+'once'
+
+Prueba para convertir 31 a letra
+>>> numero_a_letra(31)
+'treinta y uno'
+
+Prueba para convertir 25 a letra
+>>> numero_a_letra(25)
+'veinticinco'
+
+Prueba para convertir 353 a letra
+>>> numero_a_letra(353)
+'trescientos cincuenta y tres'
+
+Prueba para convertir 325 a letra
+>>> numero_a_letra(325)
+'trescientos veinticinco'
+
+Prueba para convertir 100 a letra
+>>> numero_a_letra(100)
+'cien'
+
+Prueba para convertir 101 a letra
+>>> numero_a_letra(101)
+'ciento uno'
+
+Prueba para convertir 569 a letra
+>>> numero_a_letra(569)
+'quinientos sesenta y nueve'
+
+Prueba para convertir 1000 a letra
+>>> numero_a_letra(1000)
+'mil'
+
+Prueba para convertir 2000 a letra
+>>> numero_a_letra(2000)
+'dos mil'
+
+Prueba para convertir 30245 a letra
+>>> numero_a_letra(30245)
+'treinta mil doscientos cuarenta y cinco'
+
+Prueba para convertir 100000 a letra
+>>> numero_a_letra(100000)
+'cien mil'
+
+Prueba para convertir 200000 a letra
+>>> numero_a_letra(200000)
+'doscientos mil'
+
+Prueba para convertir 325569 a letra
+>>> numero_a_letra(325569)
+'trescientos veinticinco mil quinientos sesenta y nueve'
+
+Prueba para convertir 1000000 a letra
+>>> numero_a_letra(1000000)
+'un millón'
+
+Prueba para convertir 2000000 a letra
+>>> numero_a_letra(2000000)
+'dos millones'
+
+Prueba para convertir 3255691 a letra
+>>> numero_a_letra(3255691)
+'tres millones doscientos cincuenta y cinco mil seiscientos noventa y uno'
+
+Prueba para convertir 0.55 a letra
+>>> numero_a_letra(0.55)
+'cero con cincuenta y cinco centavos'
+
+Prueba para convertir 1.01 a letra
+>>> numero_a_letra(1.01)
+'un con un centavo'
+
+Prueba para convertir 123456789.99 a letra
+>>> numero_a_letra(123456789.99)
+'ciento veintitrés millones cuatrocientos cincuenta y seis mil setecientos ochenta y nueve con noventa y nueve centavos'
+
+Prueba para convertir 1000000000 a letra
+>>> numero_a_letra(1000000000)
+'mil millones'
+
+Prueba para convertir 1000000001 a letra (fuera de rango)
+>>> numero_a_letra(1000000001)
+'Error: Número fuera de rango'
+
+Prueba para convertir -5 a letra (fuera de rango)
+>>> numero_a_letra(-5)
+'Error: Número fuera de rango'
+
+Prueba para convertir "texto" a letra (entrada inválida)
+>>> numero_a_letra("texto")
+'Error: Entrada inválida'
+
+Prueba para convertir 121000.75 a letra
+>>> numero_a_letra(121000.75)
+'ciento veintiún mil con setenta y cinco centavos'
+
+Prueba para convertir 121000000.34 a letra
+>>> numero_a_letra(121000000.34)
+'ciento veintiún millones con treinta y cuatro centavos'
+
+Prueba para convertir "" a letra (entrada inválida)
+>>> numero_a_letra("")
+'Error: Entrada inválida'
+
+Prueba para convertir -10 a letra (fuera de rango)
+>>> numero_a_letra(-10)
+'Error: Número fuera de rango'

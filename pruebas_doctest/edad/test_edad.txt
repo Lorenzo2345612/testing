@@ -1,0 +1,35 @@
+Pruebas para la función edad.
+
+>>> from edad import mensaje_edad
+
+Pobando con una persona con menos de 0 años
+>>> mensaje_edad(-5)
+'No existes'
+
+Probando con una persona de 3 años
+>>> mensaje_edad(3)
+'Eres un niño'
+
+Probando con una persona de 15 años
+>>> mensaje_edad(15)
+'Eres un adolescente'
+
+Probando con una persona de 64 años
+>>> mensaje_edad(64)
+'Eres un adulto'
+
+Probando con una persona de 110 años
+>>> mensaje_edad(110)
+'Eres un adulto mayor'
+
+Probando con una persona de 120 años
+>>> mensaje_edad(120)
+'Eres Mumm-Ra'
+
+Probando con una edad no numerica
+>>> mensaje_edad("veinte")
+'Edad no válida'
+
+Probando con 17.45 años
+>>> mensaje_edad(17.45)
+'Edad no válida'

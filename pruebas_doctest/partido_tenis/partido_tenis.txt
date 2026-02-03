@@ -1,0 +1,185 @@
+Pruebas partido de tenis
+========================
+
+>>> from partido_tenis import PartidoTenis
+
+>>> partido = PartidoTenis()
+
+Prueba gana jugador 1
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.score()
+'Game | -'
+
+>>> partido = PartidoTenis()
+
+Prueba gana jugador 2
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.score()
+'- | Game'
+
+>>> partido = PartidoTenis()
+
+Prueba empate a 40 (deuce)
+
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.score()
+'Deuce'
+
+>>> partido = PartidoTenis()
+
+Prueba ventaja jugador 1
+
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 1")
+>>> partido.score()
+'Adv | -'
+
+>>> partido = PartidoTenis()
+
+Prueba ventaja jugador 2
+
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.score()
+'- | Adv'
+
+>>> partido = PartidoTenis()
+
+Prueba gana jugador 1 tras ventaja
+
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.score()
+'Game | -'
+
+>>> partido = PartidoTenis()
+
+Prueba gana jugador 2 tras ventaja
+
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.score()
+'- | Game'
+
+>>> partido = PartidoTenis()
+
+Prueba secuencia larga
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.score()
+'Game | -'
+
+>>> partido = PartidoTenis()
+
+Prueba 15 | 0
+
+>>> partido.point_won_by("jugador 1")
+>>> partido.score()
+'15 | 0'
+
+>>> partido = PartidoTenis()
+
+Prueba 30 | 0
+
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.score()
+'30 | 0'
+
+>>> partido = PartidoTenis()
+
+Prueba 40 | 0
+
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.point_won_by("jugador 1")
+>>> partido.score()
+'40 | 0'
+
+>>> partido = PartidoTenis()
+
+Prueba 0 | 15
+
+>>> partido.point_won_by("jugador 2")
+>>> partido.score()
+'0 | 15'
+
+>>> partido = PartidoTenis()
+
+Prueba 0 | 30
+
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.score()
+'0 | 30'
+
+>>> partido = PartidoTenis()
+
+Prueba 0 | 40
+
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.point_won_by("jugador 2")
+>>> partido.score()
+'0 | 40'
+
+>>> partido = PartidoTenis()
+
+Prueba jugador debe ser 'jugador 1' o 'jugador 2'
+>>> partido.point_won_by("jugador 3")
+'El jugador debe ser "jugador 1" o "jugador 2"'
+
+Prueba jugador debe ser 'jugador 1' o 'jugador 2'
+>>> partido.point_won_by("")
+'El jugador debe ser "jugador 1" o "jugador 2"'
+
+Prueba jugador debe ser 'jugador 1' o 'jugador 2'
+>>> partido.point_won_by(1)
+'El jugador debe ser el string "jugador 1" o "jugador 2"'

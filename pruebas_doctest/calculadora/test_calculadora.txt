@@ -1,0 +1,132 @@
+Pruebas
+
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+Se ingresa el número 2 y la letra 'X', debe devolver 'Sólo se aceptan números'
+
+>>> calc.sumar(2, 'X')
+'Sólo se aceptan números'
+
+Se ingresa el número -2 y el número 5, debe devolver 'Sólo se pueden sumar números positivos'
+>>> calc.sumar(-2, 5)
+'Sólo se pueden sumar números positivos'
+
+Se ingresa el número 2 y el número 0.5, debe devolver 'Sólo se pueden sumar números enteros'
+>>> calc.sumar(2, 0.5)
+'Sólo se pueden sumar números enteros'
+
+Se ingresa el número -2 y el número 5, debe devolver 'Sólo se pueden sumar números positivos'
+>>> calc.sumar(-2, 5)
+'Sólo se pueden sumar números positivos'
+
+Se ingresa el número 2 y el número 5, debe devolver 7
+>>> calc.sumar(2, 5)
+7
+
+Pruebas resta
+
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+Se ingresa el número 2 y la letra 'X', debe devolver 'Sólo se aceptan números'
+>>> calc.restar(2, 'X')
+'Sólo se aceptan números'
+
+Se ingresa el número -2 y el número 5, debe devolver 'Sólo se pueden restar números positivos'
+>>> calc.restar(-2, 5)
+'Sólo se pueden restar números positivos'
+
+Se ingresa el número 2 y el número 0.5, debe devolver 'Sólo se pueden restar números enteros'
+>>> calc.restar(2, 0.5)
+'Sólo se pueden restar números enteros'
+
+Se ingresa el número 7 y el número 5, debe devolver 2
+>>> calc.restar(7, 5)
+2
+
+Pruebas multiplicación
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+Se ingresa el número 2 y la letra 'X', debe devolver 'Sólo se aceptan números'
+>>> calc.multiplicar(2, 'X')
+'Sólo se aceptan números'
+
+Se ingresa el número -2 y el número 5, debe devolver 'Sólo se pueden multiplicar números positivos'
+>>> calc.multiplicar(-2, 5)
+'Sólo se pueden multiplicar números positivos'
+
+Se ingresa el número 2 y el número 0.5, debe devolver 'Sólo se pueden multiplicar números enteros'
+>>> calc.multiplicar(2, 0.5)
+'Sólo se pueden multiplicar números enteros'
+
+Se ingresa el número 2 y el número 5, debe devolver 10
+>>> calc.multiplicar(2, 5)
+10
+
+Pruebas división
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+Se ingresa el número 2 y la letra 'X', debe devolver 'Sólo se aceptan números'
+>>> calc.dividir(2, 'X')
+'Sólo se aceptan números'
+
+Se ingresa el número -2 y el número 5, debe devolver 'Sólo se pueden dividir números positivos'
+>>> calc.dividir(-2, 5)
+'Sólo se pueden dividir números positivos'
+
+Se ingresa el número 2 y el número 0.5, debe devolver 'Sólo se pueden dividir números enteros'
+>>> calc.dividir(2, 0.5)
+'Sólo se pueden dividir números enteros'
+
+Se ingresa el número 2 y el número 0, debe devolver 'No se puede dividir entre cero'
+>>> calc.dividir(2, 0)
+'No se puede dividir entre cero'
+
+Se ingresa el número 10 y el número 5, debe devolver 2.0
+>>> calc.dividir(10, 5)
+2.0
+
+Prueba para potencias
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+Se ingresa el número 2 y la letra 'X', debe devolver 'Sólo se aceptan números'
+>>> calc.potencia(2, 'X')
+'Sólo se aceptan números'
+
+Se ingresa el número -2 y el número 5, debe devolver 'Sólo se pueden elevar a potencia números positivos'
+>>> calc.potencia(-2, 5)
+'Sólo se pueden elevar a potencia números positivos'
+
+Se ingresa el número 2 y el número 0.5, debe devolver 'Sólo se pueden elevar a potencia números enteros'
+>>> calc.potencia(2, 0.5)
+'Sólo se pueden elevar a potencia números enteros'
+
+Se ingresa el número 2 y el número 5, debe devolver 32
+>>> calc.potencia(2, 5)
+32
+
+
+Pruebas radicación
+
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+Se ingresa el número 2 y la letra 'X', debe devolver 'Sólo se aceptan números'
+>>> calc.raiz(2, 'X')
+'Sólo se aceptan números'
+
+Se ingresa el número -2 y el número 5, debe devolver 'Sólo se pueden calcular raíces de números positivos'
+>>> calc.raiz(-2, 5)
+'Sólo se pueden calcular raíces de números positivos'
+
+Se ingresa el número 2 y el número 0.5, debe devolver 'Sólo se pueden calcular raíces de números enteros'
+>>> calc.raiz(2, 0.5)
+'Sólo se pueden calcular raíces de números enteros'
+
+Se ingresa el número 32 y el número 5, debe devolver 2.0
+>>> calc.raiz(32, 5)
+2.0

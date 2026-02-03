@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git log --all --full-history --diff-filter=D -- ids.csv)",
+      "Bash(git log --all --full-history --diff-filter=D -- jimetter.jmx)",
+      "Bash(git log --all --full-history --diff-filter=D -- \"**/ids.csv\")",
+      "Bash(git log --all --full-history --diff-filter=D -- \"**/jimetter.jmx\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
